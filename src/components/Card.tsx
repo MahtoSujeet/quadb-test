@@ -19,7 +19,10 @@ const Card: React.FC<IProps> = ({ name, image, rating, id }) => {
       {rating &&
         <p className="mb-4 text-sm">Rating: <span dangerouslySetInnerHTML={{ __html: rating.toString() }}></span><span>⭐</span> </p>
       }
-      <Link className="rounded-xl bg-indigo-600 p-2" to={`summary/${id}`}>View Summary</Link>
+      <div className="mx-4 transform rounded-md bg-indigo-700 px-4 py-2 tracking-wide text-white transition-colors duration-200 hover:bg-indigo-600 focus:bg-indigo-600 focus:outline-none">
+
+        <Link to={`summary/${id}`}>View Summary</Link>
+      </div>
     </section>
   )
 }

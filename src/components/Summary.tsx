@@ -40,9 +40,9 @@ export default function Summary() {
           <p className="mb-2">Rating: <span dangerouslySetInnerHTML={{ __html: movie.rating.average?.toString() }}></span><span>⭐</span> </p>
         }
         <p dangerouslySetInnerHTML={{ __html: movie.summary }} />
-        <div className="mt-8">
 
-          <Link className="rounded-xl bg-indigo-600 p-2" to={`/book/${movie.name}`}>Book Now</Link>
+        <div className="m-4 inline-block transform rounded-md bg-indigo-700 px-4 py-2 tracking-wide text-white transition-colors duration-200 hover:bg-indigo-600 focus:bg-indigo-600 focus:outline-none">
+          <Link to={`/book/${movie.name}`}>Book Now</Link>
         </div>
       </div>
     </section>
