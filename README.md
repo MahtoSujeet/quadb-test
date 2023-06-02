@@ -1,4 +1,6 @@
 # TEST PROJECT FOR QUADB INTERNSHIP
+## App is deployed at 
+[quad-test.vercel.app/](https://quadb-test.vercel.app/)
  
  ## File Structure
  ```
